@@ -13,7 +13,6 @@ class Greeting2 (Resource):
    def get(self):
       print(dict(os.environ.items()))
       return dict(os.environ.items())
-      # return { "message" : "Hello Flask API World!!" , "version": 3}
 
 
 api.add_resource(Greeting, '/') # Route_1
